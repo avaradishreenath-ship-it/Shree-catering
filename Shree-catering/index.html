@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Catering Services | Premium Catering in Hubballi &amp; Dharwad</title>
+<meta name="description" content="Shree Catering Services offers premium wedding, corporate, birthday and temple catering across Hubballi, Dharwad and nearby villages in Karnataka. Fresh ingredients, experienced chefs, on-time service. Call or WhatsApp for a free quote.">
+<meta name="keywords" content="Catering Services in Hubballi, Best Caterers in Dharwad, Wedding Catering Hubballi, Birthday Catering Dharwad, Corporate Catering Hubballi, Veg Catering Hubballi, Food Catering Dharwad, Village Catering Karnataka">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.shreecatering.example/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Shree Catering Services | Premium Catering in Hubballi & Dharwad">
+<meta property="og:description" content="Making Every Celebration Delicious. Premium wedding, corporate & event catering across Hubballi, Dharwad and nearby villages.">
+<meta property="og:image" content="images/og-cover.jpg">
+<meta property="og:url" content="https://www.shreecatering.example/">
+<meta property="og:locale" content="en_IN">
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Shree Catering Services",
+  "image": "images/og-cover.jpg",
+  "@id": "https://www.shreecatering.example/",
+  "url": "https://www.shreecatering.example/",
+  "telephone": "+91-99000-00000",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vidyanagar",
+    "addressLocality": "Hubballi",
+    "addressRegion": "Karnataka",
+    "postalCode": "580031",
+    "addressCountry": "IN"
+  },
+  "areaServed": ["Hubballi","Dharwad","Navalgund","Kalghatgi","Kundgol","Annigeri","Alnavar","Garag","Hebballi","Mugad"],
+  "servesCuisine": ["South Indian","North Indian","Chinese"],
+  "openingHours": "Mo-Su 08:00-21:00"
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind (utility layout) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-ivory text-charcoal" style="color:var(--charcoal-900);">
+
+<!-- ============ LOADER ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark"></div>
+  <div class="loader-text">SHREE CATERING</div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between">
+    <a href="#home" class="font-display text-xl md:text-2xl font-semibold flex items-center gap-2" style="color:var(--emerald-900);">
+      <i class="fa-solid fa-seedling text-gold" style="color:var(--gold-500);"></i>
+      Shree <span class="text-gold" style="color:var(--gold-500);">Catering</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm" style="color:var(--emerald-950);">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#testimonials" class="nav-link">Reviews</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3">
+      <button id="dark-toggle" class="w-10 h-10 rounded-full flex items-center justify-center border" style="border-color:var(--gold-500); color:var(--emerald-900);" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <a href="tel:+919900000000" class="btn btn-emerald !py-2.5 !px-5 text-sm"><i class="fa-solid fa-phone"></i> Call Now</a>
+      <a href="#booking" class="btn btn-gold !py-2.5 !px-5 text-sm">Book Now</a>
+    </div>
+    <button id="menu-toggle" class="lg:hidden text-2xl" style="color:var(--emerald-900);" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden mt-4 mx-5 rounded-2xl bg-white shadow-xl p-6 flex flex-col gap-4 text-sm font-medium" style="color:var(--emerald-950);">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a><a href="#testimonials">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    <a href="tel:+919900000000" class="btn btn-emerald justify-center mt-2"><i class="fa-solid fa-phone"></i> Call Now</a>
+    <a href="#booking" class="btn btn-gold justify-center">Book Now</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1800&q=80');" data-img="hero-banquet-spread.jpg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content max-w-7xl mx-auto px-5 md:px-8 pt-28 pb-20 w-full">
+    <p class="hero-eyebrow eyebrow mb-5">Hubballi · Dharwad · 80km Around</p>
+    <h1 class="font-display text-[2.6rem] sm:text-6xl lg:text-7xl font-semibold max-w-4xl">
+      <span class="hero-title-line block">Traditional Taste.</span>
+      <span class="hero-title-line block">Modern Service.</span>
+      <span class="hero-title-line block accent">Memorable Events.</span>
+    </h1>
+    <p class="hero-sub mt-7 max-w-xl text-base md:text-lg" style="color:var(--ivory-100); opacity:.9;">
+      Premium catering services for weddings, corporate events, birthdays and every special occasion across Hubballi, Dharwad &amp; nearby villages.
+    </p>
+    <div class="hero-btns flex flex-wrap gap-4 mt-10">
+      <a href="#booking" class="btn btn-gold">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="https://wa.me/919900000000?text=Hi%20Shree%20Catering%2C%20I%27d%20like%20a%20quote" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+      <a href="tel:+919900000000" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Now</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- marquee strip -->
+<div class="bg-emerald-950 py-3 overflow-hidden" style="background:var(--emerald-950);">
+  <div class="flex gap-10 text-xs md:text-sm tracking-widest uppercase whitespace-nowrap" style="color:var(--gold-400); animation:marquee 22s linear infinite;">
+    <span>Weddings</span><span>•</span><span>Engagements</span><span>•</span><span>Birthdays</span><span>•</span>
+    <span>Housewarming</span><span>•</span><span>Corporate Events</span><span>•</span><span>Temple Functions</span><span>•</span>
+    <span>School &amp; College Events</span><span>•</span><span>Village Festivals</span><span>•</span>
+    <span>Family Gatherings</span><span>•</span><span>Government Events</span><span>•</span><span>Live Counters</span><span>•</span>
+  </div>
+</div>
+<style>@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}</style>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="py-24 md:py-32 bg-ivory">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <p class="section-label mb-3">Our Story</p>
+      <h2 class="section-title text-3xl md:text-[2.6rem] mb-6 leading-tight">Three generations of flavour,<br> served with new-age care.</h2>
+      <p class="text-base md:text-lg mb-5" style="color:var(--charcoal-700);">What began as a small family kitchen in Vidyanagar, Hubballi, has grown into one of the region's most trusted catering names — without ever losing the home-style care behind every dish. Today we plan and serve everything from intimate housewarmings to 2,000-guest wedding banquets, across Hubballi, Dharwad and the villages around them.</p>
+      <div class="grid sm:grid-cols-2 gap-5 mt-8">
+        <div class="flex gap-3">
+          <i class="fa-solid fa-bullseye text-gold mt-1" style="color:var(--gold-500);"></i>
+          <div><p class="font-semibold">Our Mission</p><p class="text-sm" style="color:var(--charcoal-700);">Make every celebration delicious, stress-free and memorable for the host.</p></div>
+        </div>
+        <div class="flex gap-3">
+          <i class="fa-solid fa-eye text-gold mt-1" style="color:var(--gold-500);"></i>
+          <div><p class="font-semibold">Our Vision</p><p class="text-sm" style="color:var(--charcoal-700);">To be North Karnataka's most loved catering brand, one event at a time.</p></div>
+        </div>
+        <div class="flex gap-3">
+          <i class="fa-solid fa-leaf text-gold mt-1" style="color:var(--gold-500);"></i>
+          <div><p class="font-semibold">Fresh Ingredients</p><p class="text-sm" style="color:var(--charcoal-700);">Sourced daily from local markets and trusted farms.</p></div>
+        </div>
+        <div class="flex gap-3">
+          <i class="fa-solid fa-clock text-gold mt-1" style="color:var(--gold-500);"></i>
+          <div><p class="font-semibold">Timely Delivery</p><p class="text-sm" style="color:var(--charcoal-700);">Setup completed well before guests arrive, every time.</p></div>
+        </div>
+      </div>
+      <div class="garland mt-10"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="relative" data-aos="fade-left">
+      <div class="img-zoom rounded-[28px] overflow-hidden shadow-2xl">
+        <img src="https://picsum.photos/seed/chef-team-kitchen/900/1000" data-filename="about-chef-team.jpg" alt="Shree Catering chef team preparing a banquet" class="w-full h-[480px] md:h-[560px] object-cover" loading="lazy">
+      </div>
+      <div class="absolute -bottom-8 -left-6 md:-left-10 card px-7 py-6 rounded-2xl" style="background:var(--emerald-900);">
+        <p class="font-display text-4xl text-gold" style="color:var(--gold-400);">10+</p>
+        <p class="text-xs tracking-widest uppercase" style="color:var(--ivory-100);">Years of Experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS / COUNTERS ============ -->
+<section class="py-16 bg-emerald-950" style="background:var(--emerald-950);">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div data-aos="fade-up">
+      <p class="counter-num text-4xl md:text-5xl counter" data-target="500" data-suffix="+">0</p>
+      <p class="mt-2 text-xs md:text-sm tracking-widest uppercase" style="color:var(--ivory-100);">Events Completed</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100">
+      <p class="counter-num text-4xl md:text-5xl counter" data-target="20000" data-suffix="+">0</p>
+      <p class="mt-2 text-xs md:text-sm tracking-widest uppercase" style="color:var(--ivory-100);">Happy Customers</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="200">
+      <p class="counter-num text-4xl md:text-5xl counter" data-target="30" data-suffix="+">0</p>
+      <p class="mt-2 text-xs md:text-sm tracking-widest uppercase" style="color:var(--ivory-100);">Professional Staff</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="300">
+      <p class="counter-num text-4xl md:text-5xl counter" data-target="10" data-suffix="+">0</p>
+      <p class="mt-2 text-xs md:text-sm tracking-widest uppercase" style="color:var(--ivory-100);">Years Experience</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="py-24 md:py-32 bg-ivory-100">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <p class="section-label mb-3">What We Offer</p>
+      <h2 class="section-title text-3xl md:text-[2.6rem]">Catering for every occasion</h2>
+      <div class="garland mt-5"><span></span><span></span><span></span></div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <div class="card overflow-hidden" data-aos="fade-up">
+        <div class="img-zoom h-56"><img src="https://picsum.photos/seed/wedding-catering-buffet/700/500" data-filename="service-wedding-catering.jpg" alt="Wedding catering buffet setup" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><i class="fa-solid fa-ring text-gold text-xl mb-3" style="color:var(--gold-500);"></i><h3 class="font-display text-xl mb-2">Wedding Catering</h3><p class="text-sm" style="color:var(--charcoal-700);">Grand buffets and traditional spreads designed for the biggest day of your life.</p></div>
+      </div>
+
+      <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="80">
+        <div class="img-zoom h-56"><img src="https://picsum.photos/seed/birthday-catering-table/700/500" data-filename="service-birthday-catering.jpg" alt="Birthday party catering spread" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><i class="fa-solid fa-cake-candles text-gold text-xl mb-3" style="color:var(--gold-500);"></i><h3 class="font-display text-xl mb-2">Birthday Catering</h3><p class="text-sm" style="color:var(--charcoal-700);">Fun, colourful menus that delight guests of every age.</p></div>
+      </div>
+
+      <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="160">
+        <div class="img-zoom h-56"><img src="https://picsum.photos/seed/corporate-event-catering/700/500" data-filename="service-corporate-catering.jpg" alt="Corporate event catering" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><i class="fa-solid fa-briefcase text-gold text-xl mb-3" style="color:var(--gold-500);"></i><h3 class="font-display text-xl mb-2">Corporate Catering</h3><p class="text-sm" style="color:var(--charcoal-700);">Punctual, professional service for conferences, launches and office events.</p></div>
+      </div>
+
+      <div class="card overflow-hidden" data-aos="fade-up">
+        <div class="img-zoom h-56"><img src="https://picsum.photos/seed/temple-prasadam-catering/700/500" data-filename="service-temple-catering.jpg" alt="Temple function catering prasadam" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><i class="fa-solid fa-place-of-worship text-gold text-xl mb-3" style="color:var(--gold-500);"></i><h3 class="font-display text-xl mb-2">Temple Catering</h3><p class="text-sm" style="color:var(--charcoal-700);">Pure-veg prasadam and annadanam catering with traditional rituals respected.</p></div>
+      </div>
+
+      <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="80">
+        <div class="img-zoom h-56"><img src="https://picsum.photos/seed/outdoor-catering-event/700/500" data-filename="service-outdoor-catering.jpg" alt="Outdoor catering setup under canopy" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><i class="fa-solid fa-tents text-gold text-xl mb-3" style="color:var(--gold-500);"></i><h3 class="font-display text-xl mb-2">Outdoor Catering</h3><p class="text-sm" style="color:var(--charcoal-700);">Full setup catering for farmhouses, grounds and village festival venues.</p></div>
+      </div>
+
+      <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="160">
+        <div class="img-zoom h-56"><img src="https://picsum.photos/seed/live-food-counter-chef/700/500" data-filename="service-live-counters.jpg" alt="Live food counter with chef" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><i class="fa-solid fa-fire-burner text-gold text-xl mb-3" style="color:var(--gold-500);"></i><h3 class="font-display text-xl mb-2">Live Food Counters</h3><p class="text-sm" style="color:var(--charcoal-700);">Chaat, dosa, pasta and dessert counters cooked live in front of guests.</p></div>
+      </div>
+
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 mt-12 text-sm font-medium" style="color:var(--emerald-900);">
+      <span class="px-4 py-2 rounded-full bg-white shadow">South Indian Meals</span>
+      <span class="px-4 py-2 rounded-full bg-white shadow">North Indian Cuisine</span>
+      <span class="px-4 py-2 rounded-full bg-white shadow">Chinese</span>
+      <span class="px-4 py-2 rounded-full bg-white shadow">Snacks</span>
+      <span class="px-4 py-2 rounded-full bg-white shadow">Desserts</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section id="menu" class="py-24 md:py-32 bg-ivory">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+      <p class="section-label mb-3">Sample Menu</p>
+      <h2 class="section-title text-3xl md:text-[2.6rem]">A taste of what we serve</h2>
+      <p class="mt-4 text-sm md:text-base" style="color:var(--charcoal-700);">Every menu is fully customisable to your event, guest count and budget. Below is a sample selection.</p>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-3 mb-12" data-aos="fade-up">
+      <button class="tab-btn menu-tab active" data-cat="all">All</button>
+      <button class="tab-btn menu-tab" data-cat="breakfast">Breakfast</button>
+      <button class="tab-btn menu-tab" data-cat="starters">Starters</button>
+      <button class="tab-btn menu-tab" data-cat="main">Main Course</button>
+      <button class="tab-btn menu-tab" data-cat="rice">Rice</button>
+      <button class="tab-btn menu-tab" data-cat="breads">Breads</button>
+      <button class="tab-btn menu-tab" data-cat="desserts">Desserts</button>
+      <button class="tab-btn menu-tab" data-cat="drinks">Soft Drinks</button>
+      <button class="tab-btn menu-tab" data-cat="live">Live Counters</button>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Breakfast -->
+      <div class="menu-card card p-6" data-cat="breakfast"><i class="fa-solid fa-mug-hot text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Set Dosa &amp; Chutney</h4><p class="text-xs" style="color:var(--charcoal-700);">Soft set dosas with coconut and tomato chutney</p></div>
+      <div class="menu-card card p-6" data-cat="breakfast"><i class="fa-solid fa-mug-hot text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Pongal &amp; Vada</h4><p class="text-xs" style="color:var(--charcoal-700);">Classic ghee pongal served with crispy medu vada</p></div>
+      <div class="menu-card card p-6" data-cat="breakfast"><i class="fa-solid fa-mug-hot text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Poha &amp; Jalebi</h4><p class="text-xs" style="color:var(--charcoal-700);">Light spiced poha with warm sugar-syrup jalebi</p></div>
+      <div class="menu-card card p-6" data-cat="breakfast"><i class="fa-solid fa-mug-hot text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Idli Sambar</h4><p class="text-xs" style="color:var(--charcoal-700);">Steamed idlis with sambar and three chutneys</p></div>
+
+      <!-- Starters -->
+      <div class="menu-card card p-6" data-cat="starters"><i class="fa-solid fa-pepper-hot text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Paneer Tikka</h4><p class="text-xs" style="color:var(--charcoal-700);">Char-grilled paneer marinated in tandoori spice</p></div>
+      <div class="menu-card card p-6" data-cat="starters"><i class="fa-solid fa-pepper-hot text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Gobi Manchurian</h4><p class="text-xs" style="color:var(--charcoal-700);">Crispy cauliflower tossed in Indo-Chinese sauce</p></div>
+      <div class="menu-card card p-6" data-cat="starters"><i class="fa-solid fa-pepper-hot text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Corn Cheese Balls</h4><p class="text-xs" style="color:var(--charcoal-700);">Golden fried sweet corn and cheese bites</p></div>
+      <div class="menu-card card p-6" data-cat="starters"><i class="fa-solid fa-pepper-hot text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Hara Bhara Kebab</h4><p class="text-xs" style="color:var(--charcoal-700);">Spinach and green pea kebabs, lightly spiced</p></div>
+
+      <!-- Main course -->
+      <div class="menu-card card p-6" data-cat="main"><i class="fa-solid fa-bowl-food text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Paneer Butter Masala</h4><p class="text-xs" style="color:var(--charcoal-700);">Rich tomato-cashew gravy with soft paneer cubes</p></div>
+      <div class="menu-card card p-6" data-cat="main"><i class="fa-solid fa-bowl-food text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Mixed Veg Kurma</h4><p class="text-xs" style="color:var(--charcoal-700);">Seasonal vegetables in a coconut-spice gravy</p></div>
+      <div class="menu-card card p-6" data-cat="main"><i class="fa-solid fa-bowl-food text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Dal Tadka</h4><p class="text-xs" style="color:var(--charcoal-700);">Yellow lentils tempered with ghee and cumin</p></div>
+      <div class="menu-card card p-6" data-cat="main"><i class="fa-solid fa-bowl-food text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Palak Paneer</h4><p class="text-xs" style="color:var(--charcoal-700);">Creamy spinach gravy with fresh paneer</p></div>
+
+      <!-- Rice -->
+      <div class="menu-card card p-6" data-cat="rice"><i class="fa-solid fa-wheat-awn text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Veg Biryani</h4><p class="text-xs" style="color:var(--charcoal-700);">Fragrant basmati layered with vegetables and spices</p></div>
+      <div class="menu-card card p-6" data-cat="rice"><i class="fa-solid fa-wheat-awn text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Jeera Rice</h4><p class="text-xs" style="color:var(--charcoal-700);">Light cumin-tempered steamed rice</p></div>
+      <div class="menu-card card p-6" data-cat="rice"><i class="fa-solid fa-wheat-awn text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Curd Rice</h4><p class="text-xs" style="color:var(--charcoal-700);">Traditional South Indian comfort rice, tempered</p></div>
+      <div class="menu-card card p-6" data-cat="rice"><i class="fa-solid fa-wheat-awn text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Bisi Bele Bath</h4><p class="text-xs" style="color:var(--charcoal-700);">Karnataka-style spiced rice and lentil one-pot</p></div>
+
+      <!-- Breads -->
+      <div class="menu-card card p-6" data-cat="breads"><i class="fa-solid fa-circle-notch text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Butter Naan</h4><p class="text-xs" style="color:var(--charcoal-700);">Tandoor-baked naan brushed with butter</p></div>
+      <div class="menu-card card p-6" data-cat="breads"><i class="fa-solid fa-circle-notch text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Jowar Roti</h4><p class="text-xs" style="color:var(--charcoal-700);">North Karnataka staple sorghum flatbread</p></div>
+      <div class="menu-card card p-6" data-cat="breads"><i class="fa-solid fa-circle-notch text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Phulka</h4><p class="text-xs" style="color:var(--charcoal-700);">Soft puffed whole-wheat rotis, made fresh</p></div>
+      <div class="menu-card card p-6" data-cat="breads"><i class="fa-solid fa-circle-notch text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Stuffed Kulcha</h4><p class="text-xs" style="color:var(--charcoal-700);">Spiced potato-stuffed leavened bread</p></div>
+
+      <!-- Desserts -->
+      <div class="menu-card card p-6" data-cat="desserts"><i class="fa-solid fa-ice-cream text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Gulab Jamun</h4><p class="text-xs" style="color:var(--charcoal-700);">Warm milk dumplings soaked in cardamom syrup</p></div>
+      <div class="menu-card card p-6" data-cat="desserts"><i class="fa-solid fa-ice-cream text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Kesari Bath</h4><p class="text-xs" style="color:var(--charcoal-700);">Saffron semolina sweet, a Karnataka classic</p></div>
+      <div class="menu-card card p-6" data-cat="desserts"><i class="fa-solid fa-ice-cream text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Rasmalai</h4><p class="text-xs" style="color:var(--charcoal-700);">Soft paneer discs in saffron-cardamom milk</p></div>
+      <div class="menu-card card p-6" data-cat="desserts"><i class="fa-solid fa-ice-cream text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Vanilla Ice Cream</h4><p class="text-xs" style="color:var(--charcoal-700);">Creamy classic, served chilled at the counter</p></div>
+
+      <!-- Drinks -->
+      <div class="menu-card card p-6" data-cat="drinks"><i class="fa-solid fa-glass-water text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Buttermilk (Majjige)</h4><p class="text-xs" style="color:var(--charcoal-700);">Spiced chilled buttermilk with curry leaf</p></div>
+      <div class="menu-card card p-6" data-cat="drinks"><i class="fa-solid fa-glass-water text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Fresh Lime Soda</h4><p class="text-xs" style="color:var(--charcoal-700);">Sweet or salted, served on ice</p></div>
+      <div class="menu-card card p-6" data-cat="drinks"><i class="fa-solid fa-glass-water text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Rose Milk</h4><p class="text-xs" style="color:var(--charcoal-700);">Chilled milk with rose syrup, a festive favourite</p></div>
+      <div class="menu-card card p-6" data-cat="drinks"><i class="fa-solid fa-glass-water text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Filter Coffee</h4><p class="text-xs" style="color:var(--charcoal-700);">South Indian decoction coffee, served hot</p></div>
+
+      <!-- Live counters -->
+      <div class="menu-card card p-6" data-cat="live"><i class="fa-solid fa-fire text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Live Dosa Counter</h4><p class="text-xs" style="color:var(--charcoal-700);">Made-to-order dosas with five chutney varieties</p></div>
+      <div class="menu-card card p-6" data-cat="live"><i class="fa-solid fa-fire text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Chaat Counter</h4><p class="text-xs" style="color:var(--charcoal-700);">Pani puri, bhel and sev puri assembled fresh</p></div>
+      <div class="menu-card card p-6" data-cat="live"><i class="fa-solid fa-fire text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Pasta Counter</h4><p class="text-xs" style="color:var(--charcoal-700);">Red, white and pink sauce pasta tossed live</p></div>
+      <div class="menu-card card p-6" data-cat="live"><i class="fa-solid fa-fire text-gold mb-3" style="color:var(--gold-500);"></i><h4 class="font-display text-lg mb-1">Dessert Counter</h4><p class="text-xs" style="color:var(--charcoal-700);">Live jalebi, falooda and ice-cream station</p></div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#contact" class="btn btn-emerald"><i class="fa-solid fa-file-arrow-down"></i> Download Full Menu PDF</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="py-24 md:py-32" style="background:var(--emerald-950);">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <p class="section-label mb-3" style="color:var(--gold-400);">Why Shree Catering</p>
+      <h2 class="section-title text-3xl md:text-[2.6rem]" style="color:var(--ivory-50);">Why families &amp; companies choose us</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- repeated card pattern -->
+      <div class="glass rounded-2xl p-7" data-aos="fade-up"><i class="fa-solid fa-leaf text-2xl mb-4" style="color:var(--gold-400);"></i><h4 class="text-lg font-semibold mb-1" style="color:var(--ivory-50);">Fresh Ingredients</h4><p class="text-sm" style="color:var(--ivory-100); opacity:.8;">Sourced fresh every single day, never frozen stock.</p></div>
+      <div class="glass rounded-2xl p-7" data-aos="fade-up" data-aos-delay="60"><i class="fa-solid fa-hat-chef text-2xl mb-4" style="color:var(--gold-400);"></i><h4 class="text-lg font-semibold mb-1" style="color:var(--ivory-50);">Experienced Chefs</h4><p class="text-sm" style="color:var(--ivory-100); opacity:.8;">A 30+ member team trained in regional and global cuisine.</p></div>
+      <div class="glass rounded-2xl p-7" data-aos="fade-up" data-aos-delay="120"><i class="fa-solid fa-tags text-2xl mb-4" style="color:var(--gold-400);"></i><h4 class="text-lg font-semibold mb-1" style="color:var(--ivory-50);">Affordable Pricing</h4><p class="text-sm" style="color:var(--ivory-100); opacity:.8;">Transparent packages with no hidden charges.</p></div>
+      <div class="glass rounded-2xl p-7" data-aos="fade-up"><i class="fa-solid fa-sliders text-2xl mb-4" style="color:var(--gold-400);"></i><h4 class="text-lg font-semibold mb-1" style="color:var(--ivory-50);">Customised Menus</h4><p class="text-sm" style="color:var(--ivory-100); opacity:.8;">Every menu tailored to your taste, region and budget.</p></div>
+      <div class="glass rounded-2xl p-7" data-aos="fade-up" data-aos-delay="60"><i class="fa-solid fa-stopwatch text-2xl mb-4" style="color:var(--gold-400);"></i><h4 class="text-lg font-semibold mb-1" style="color:var(--ivory-50);">On-Time Service</h4><p class="text-sm" style="color:var(--ivory-100); opacity:.8;">Set-up finished well before your guests arrive.</p></div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="py-24 md:py-32 bg-ivory">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <p class="section-label mb-3">Moments We've Catered</p>
+      <h2 class="section-title text-3xl md:text-[2.6rem]">A glimpse into our events</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div class="gallery-item img-zoom row-span-2" data-aos="fade-up"><img src="https://picsum.photos/seed/gallery-wedding-mandap/600/800" data-filename="gallery-wedding-mandap.jpg" alt="Wedding mandap decoration and catering" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="gallery-item img-zoom" data-aos="fade-up" data-aos-delay="60"><img src="https://picsum.photos/seed/gallery-buffet-setup/600/420" data-filename="gallery-buffet-setup.jpg" alt="Elegant buffet setup" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="gallery-item img-zoom" data-aos="fade-up" data-aos-delay="120"><img src="https://picsum.photos/seed/gallery-live-counter/600/420" data-filename="gallery-live-counter.jpg" alt="Live food counter at event" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="gallery-item img-zoom row-span-2" data-aos="fade-up"><img src="https://picsum.photos/seed/gallery-traditional-thali/600/800" data-filename="gallery-traditional-thali.jpg" alt="Traditional South Indian thali meal" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="gallery-item img-zoom" data-aos="fade-up" data-aos-delay="60"><img src="https://picsum.photos/seed/gallery-modern-buffet/600/420" data-filename="gallery-modern-buffet.jpg" alt="Modern buffet arrangement" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="gallery-item img-zoom" data-aos="fade-up" data-aos-delay="120"><img src="https://picsum.photos/seed/gallery-dessert-table/600/420" data-filename="gallery-desserts.jpg" alt="Dessert table display" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="gallery-item img-zoom" data-aos="fade-up"><img src="https://picsum.photos/seed/gallery-decoration-floral/600/420" data-filename="gallery-decoration.jpg" alt="Floral event decoration" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="gallery-item img-zoom" data-aos="fade-up" data-aos-delay="60"><img src="https://picsum.photos/seed/gallery-chef-team-2/600/420" data-filename="gallery-chef-team.jpg" alt="Shree Catering chef team" class="w-full h-full object-cover" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="py-24 md:py-32 bg-ivory-100">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <p class="section-label mb-3">Reviews</p>
+      <h2 class="section-title text-3xl md:text-[2.6rem]">What our customers say</h2>
+    </div>
+
+    <div class="swiper testimonial-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper pb-12">
+
+        <div class="swiper-slide"><div class="card p-7 h-full"><div class="text-gold mb-3" style="color:var(--gold-500);">★★★★★</div><p class="text-sm mb-5" style="color:var(--charcoal-700);">"The food was delicious and service was outstanding. Everyone loved the buffet."</p><p class="font-semibold">Ravi</p><p class="text-xs" style="color:var(--charcoal-700);">Hubballi</p></div></div>
+
+        <div class="swiper-slide"><div class="card p-7 h-full"><div class="text-gold mb-3" style="color:var(--gold-500);">★★★★★</div><p class="text-sm mb-5" style="color:var(--charcoal-700);">"Highly recommended for weddings. The live counters were a huge hit with our guests."</p><p class="font-semibold">Priya</p><p class="text-xs" style="color:var(--charcoal-700);">Dharwad</p></div></div>
+
+        <div class="swiper-slide"><div class="card p-7 h-full"><div class="text-gold mb-3" style="color:var(--gold-500);">★★★★★</div><p class="text-sm mb-5" style="color:var(--charcoal-700);">"Professional team, on time setup, and the jowar roti tasted just like home."</p><p class="font-semibold">Suresh Patil</p><p class="text-xs" style="color:var(--charcoal-700);">Navalgund</p></div></div>
+
+        <div class="swiper-slide"><div class="card p-7 h-full"><div class="text-gold mb-3" style="color:var(--gold-500);">★★★★★</div><p class="text-sm mb-5" style="color:var(--charcoal-700);">"They handled our corporate offsite for 300 people flawlessly. Will book again."</p><p class="font-semibold">Anita Deshpande</p><p class="text-xs" style="color:var(--charcoal-700);">Hubballi</p></div></div>
+
+        <div class="swiper-slide"><div class="card p-7 h-full"><div class="text-gold mb-3" style="color:var(--gold-500);">★★★★★</div><p class="text-sm mb-5" style="color:var(--charcoal-700);">"Our temple annadanam event was managed with so much care and devotion."</p><p class="font-semibold">Gurupadayya Swami</p><p class="text-xs" style="color:var(--charcoal-700);">Kalghatgi</p></div></div>
+
+        <div class="swiper-slide"><div class="card p-7 h-full"><div class="text-gold mb-3" style="color:var(--gold-500);">★★★★★</div><p class="text-sm mb-5" style="color:var(--charcoal-700);">"Booked them for my daughter's birthday — the dessert counter was magical."</p><p class="font-semibold">Kavita Hegde</p><p class="text-xs" style="color:var(--charcoal-700);">Dharwad</p></div></div>
+
+        <div class="swiper-slide"><div class="card p-7 h-full"><div class="text-gold mb-3" style="color:var(--gold-500);">★★★★★</div><p class="text-sm mb-5" style="color:var(--charcoal-700);">"Even for our village festival they travelled and set up everything beautifully."</p><p class="font-semibold">Basavaraj Hadimani</p><p class="text-xs" style="color:var(--charcoal-700);">Annigeri</p></div></div>
+
+        <div class="swiper-slide"><div class="card p-7 h-full"><div class="text-gold mb-3" style="color:var(--gold-500);">★★★★★</div><p class="text-sm mb-5" style="color:var(--charcoal-700);">"Great value for money and the staff were extremely polite throughout."</p><p class="font-semibold">Meera Joshi</p><p class="text-xs" style="color:var(--charcoal-700);">Kundgol</p></div></div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="py-24 md:py-32 bg-ivory">
+  <div class="max-w-4xl mx-auto px-5 md:px-8">
+    <div class="text-center mb-14" data-aos="fade-up">
+      <p class="section-label mb-3">Got Questions?</p>
+      <h2 class="section-title text-3xl md:text-[2.6rem]">Frequently asked questions</h2>
+    </div>
+    <div data-aos="fade-up">
+      <div class="faq-item open">
+        <div class="faq-q">How much do you charge? <i class="fa-solid fa-plus faq-icon"></i></div>
+        <div class="faq-a">Pricing depends on guest count, menu and service style. Share your event details with us on WhatsApp or via the booking form below and we'll send a custom quote within hours.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you provide vegetarian catering? <i class="fa-solid fa-plus faq-icon"></i></div>
+        <div class="faq-a">Yes — we specialise in pure vegetarian menus across South Indian, North Indian and Chinese cuisines, including Jain options on request.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I customize the menu? <i class="fa-solid fa-plus faq-icon"></i></div>
+        <div class="faq-a">Absolutely. Every menu is built around your taste, budget and event type — mix and match dishes from any category.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you serve villages? <i class="fa-solid fa-plus faq-icon"></i></div>
+        <div class="faq-a">Yes, we cater across Hubballi, Dharwad and all surrounding villages within roughly 80 km, including Navalgund, Kalghatgi, Kundgol, Annigeri, Alnavar, Garag, Hebballi and Mugad.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How early should I book? <i class="fa-solid fa-plus faq-icon"></i></div>
+        <div class="faq-a">For weddings we recommend booking 2-3 months in advance. Smaller events like birthdays can usually be confirmed within a week, subject to availability.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you provide live counters? <i class="fa-solid fa-plus faq-icon"></i></div>
+        <div class="faq-a">Yes — dosa, chaat, pasta and dessert live counters are available and very popular at weddings and corporate events.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is the minimum order quantity? <i class="fa-solid fa-plus faq-icon"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING FORM ============ -->
+<section id="booking" class="py-24 md:py-32" style="background:var(--emerald-950);">
+  <div class="max-w-4xl mx-auto px-5 md:px-8">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <p class="section-label mb-3" style="color:var(--gold-400);">Plan Your Event</p>
+      <h2 class="section-title text-3xl md:text-[2.6rem]" style="color:var(--ivory-50);">Request a free quote</h2>
+      <p class="mt-3 text-sm" style="color:var(--ivory-100); opacity:.8;">Fill in your details and our team will call you back within a few hours.</p>
+    </div>
+
+    <form id="booking-form" class="card p-7 md:p-10 grid sm:grid-cols-2 gap-5" data-aos="fade-up" novalidate>
+      <div>
+        <label class="req text-sm font-medium block mb-1.5">Full Name</label>
+        <input type="text" name="name" data-required class="field" placeholder="Your name">
+        <p class="field-error-msg">Please enter your name.</p>
+      </div>
+      <div>
+        <label class="req text-sm font-medium block mb-1.5">Phone Number</label>
+        <input type="tel" name="phone" data-required class="field" placeholder="10-digit mobile number">
+        <p class="field-error-msg">Please enter a valid phone number.</p>
+      </div>
+      <div>
+        <label class="text-sm font-medium block mb-1.5">WhatsApp Number</label>
+        <input type="tel" name="whatsapp" class="field" placeholder="Same as phone, if applicable">
+      </div>
+      <div>
+        <label class="req text-sm font-medium block mb-1.5">Email</label>
+        <input type="email" name="email" data-required class="field" placeholder="you@example.com">
+        <p class="field-error-msg">Please enter a valid email.</p>
+      </div>
+      <div>
+        <label class="req text-sm font-medium block mb-1.5">Event Type</label>
+        <select name="eventType" data-required class="field">
+          <option value="">Select event type</option>
+          <option>Wedding</option><option>Engagement</option><option>Birthday Party</option>
+          <option>Housewarming</option><option>Corporate Event</option><option>Temple Function</option>
+          <option>School/College Event</option><option>Village Festival</option><option>Other</option>
+        </select>
+        <p class="field-error-msg">Please select an event type.</p>
+      </div>
+      <div>
+        <label class="req text-sm font-medium block mb-1.5">Event Date</label>
+        <input type="date" name="eventDate" data-required class="field">
+        <p class="field-error-msg">Please select a date.</p>
+      </div>
+      <div>
+        <label class="req text-sm font-medium block mb-1.5">Location</label>
+        <input type="text" name="location" data-required class="field" placeholder="Town / village">
+        <p class="field-error-msg">Please enter your location.</p>
+      </div>
+      <div>
+        <label class="text-sm font-medium block mb-1.5">Expected Guests</label>
+        <input type="number" name="guests" min="1" class="field" placeholder="e.g. 150">
+      </div>
+      <div>
+        <label class="text-sm font-medium block mb-1.5">Budget (₹)</label>
+        <input type="text" name="budget" class="field" placeholder="Approx. budget, if known">
+      </div>
+      <div class="sm:col-span-2">
+        <label class="text-sm font-medium block mb-1.5">Message</label>
+        <textarea name="message" rows="4" class="field" placeholder="Tell us more about your event"></textarea>
+      </div>
+      <div class="sm:col-span-2 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+        <button type="submit" class="btn btn-gold">Request Quote <i class="fa-solid fa-paper-plane"></i></button>
+        <a id="form-wa-link" href="https://wa.me/919900000000" target="_blank" class="text-sm underline" style="color:var(--gold-500);">or send these details on WhatsApp instead</a>
+      </div>
+      <p id="form-success" class="sm:col-span-2 hidden text-sm font-medium p-4 rounded-xl" style="background:rgba(201,160,77,.15); color:var(--gold-400);"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="py-24 md:py-32 bg-ivory">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-12">
+    <div data-aos="fade-right">
+      <p class="section-label mb-3">Get In Touch</p>
+      <h2 class="section-title text-3xl md:text-[2.6rem] mb-8">We'd love to cater your next event</h2>
+      <div class="space-y-5 text-sm">
+        <div class="flex items-start gap-4"><i class="fa-solid fa-phone text-gold mt-1" style="color:var(--gold-500);"></i><div><p class="font-semibold">Phone</p><a href="tel:+919900000000" style="color:var(--charcoal-700);">+91 99000 00000</a></div></div>
+        <div class="flex items-start gap-4"><i class="fa-brands fa-whatsapp text-gold mt-1" style="color:var(--gold-500);"></i><div><p class="font-semibold">WhatsApp</p><a href="https://wa.me/919900000000" target="_blank" style="color:var(--charcoal-700);">+91 99000 00000</a></div></div>
+        <div class="flex items-start gap-4"><i class="fa-solid fa-envelope text-gold mt-1" style="color:var(--gold-500);"></i><div><p class="font-semibold">Email</p><a href="mailto:hello@shreecatering.example" style="color:var(--charcoal-700);">hello@shreecatering.example</a></div></div>
+        <div class="flex items-start gap-4"><i class="fa-solid fa-location-dot text-gold mt-1" style="color:var(--gold-500);"></i><div><p class="font-semibold">Address</p><p style="color:var(--charcoal-700);">Vidyanagar, Hubballi, Karnataka 580031</p></div></div>
+        <div class="flex items-start gap-4"><i class="fa-solid fa-clock text-gold mt-1" style="color:var(--gold-500);"></i><div><p class="font-semibold">Business Hours</p><p style="color:var(--charcoal-700);">Mon – Sun: 8:00 AM – 9:00 PM</p></div></div>
+      </div>
+      <div class="flex gap-3 mt-8">
+        <a href="#" class="w-11 h-11 rounded-full flex items-center justify-center" style="background:var(--emerald-800); color:#fff;"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="w-11 h-11 rounded-full flex items-center justify-center" style="background:var(--emerald-800); color:#fff;"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="w-11 h-11 rounded-full flex items-center justify-center" style="background:var(--emerald-800); color:#fff;"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div data-aos="fade-left" class="rounded-[28px] overflow-hidden shadow-xl min-h-[360px]">
+      <iframe title="Shree Catering Services location map" src="https://www.google.com/maps?q=Hubballi,Karnataka&output=embed" width="100%" height="100%" style="border:0; min-height:360px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="pt-20 pb-8" style="background:var(--emerald-950); color:var(--ivory-100);">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
+    <div>
+      <p class="font-display text-2xl mb-3" style="color:var(--ivory-50);">Shree <span style="color:var(--gold-400);">Catering</span></p>
+      <p class="text-sm opacity-75 mb-4">Making Every Celebration Delicious. Premium catering across Hubballi, Dharwad and surrounding villages.</p>
+      <div class="garland"><span></span><span></span><span></span></div>
+    </div>
+    <div>
+      <p class="font-semibold mb-4" style="color:var(--gold-400);">Quick Links</p>
+      <ul class="space-y-2 text-sm opacity-80">
+        <li><a href="#services">Services</a></li><li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4" style="color:var(--gold-400);">Legal</p>
+      <ul class="space-y-2 text-sm opacity-80">
+        <li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4" style="color:var(--gold-400);">Service Area</p>
+      <p class="text-sm opacity-80">Hubballi, Dharwad, Navalgund, Kalghatgi, Kundgol, Annigeri, Alnavar, Garag, Hebballi, Mugad and all nearby villages within 80 km.</p>
+    </div>
+  </div>
+  <div class="border-t border-white/10 pt-6 text-center text-xs opacity-60">
+    © <span id="year"></span> Shree Catering Services. All rights reserved.
+  </div>
+</footer>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="floating-btns">
+  <button id="fab-top" class="fab fab-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <a href="tel:+919900000000" class="fab fab-call" aria-label="Call now"><i class="fa-solid fa-phone"></i></a>
+  <a href="https://wa.me/919900000000?text=Hi%20Shree%20Catering%2C%20I%27d%20like%20a%20quote" target="_blank" class="fab fab-wa" aria-label="WhatsApp us"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox">
+  <span class="lb-close">&times;</span>
+  <span class="lb-nav lb-prev">&#10094;</span>
+  <img id="lb-img" src="" alt="">
+  <span class="lb-nav lb-next">&#10095;</span>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
